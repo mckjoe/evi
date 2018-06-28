@@ -64,16 +64,19 @@ const STORE_LIST = [
 function VisitUs() {
   return (
     <div>
-      {STORE_LIST.map((store, index) =>
-        <Store image={store.image}
-          name={store.name}
-          desc={store.desc}
-          descriptionAdditional= {store.descriptionAdditional}
-          location={store.location}
-          hours={store.hours}
-          services={store.services}
-          key={index}/>
-      )}
+
+      <div>
+        {STORE_LIST.map((store, index) =>
+          <Store image={store.image}
+            name={store.name}
+            desc={store.desc}
+            descriptionAdditional= {store.descriptionAdditional}
+            location={store.location}
+            hours={store.hours}
+            services={store.services}
+            key={index}/>
+        )}
+      </div>
     </div>
   );
 }

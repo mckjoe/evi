@@ -61,10 +61,10 @@ function Men() {
 
         .masthead-text {
           color: #4c4c4c;
-          font-size: 1.75rem;
+          font-size: 2rem;
           font-weight: lighter;
-          padding-top: 200px;
-          padding-left: 150px;
+          padding-top: 150px;
+          padding-left: 200px;
         }
       `}</style>
     <div className="mens-page-top">

@@ -8,6 +8,7 @@ import Women from './women';
 import About from './About';
 import VisitUs from './VisitUs';
 import Factories from './Factories';
+import Footer from './Footer';
 
 function App(){
 
@@ -32,6 +33,8 @@ function App(){
         <Route path='/factories' component={Factories} />
         <Route component={Error404} />
       </Switch>
+
+      <Footer />
     </div>
   );
 }
