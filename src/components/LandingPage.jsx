@@ -16,10 +16,12 @@ function LandingPage() {
           justify-content: space-between;
           align-items: center;
         }
+
         .header{
           font-size: 5rem;
           font-weight: lighter;
         }
+
         .button {
           background-color: white;
           padding: 10px 30px;
