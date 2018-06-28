@@ -21,6 +21,9 @@ function App(){
           box-sizing: border-box;
           font-weight: lighter;
         }
+        li:hover, button:hover {
+          cursor: pointer;
+        }
       `}</style>
       <Navbar />
 

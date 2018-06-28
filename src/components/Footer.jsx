@@ -12,11 +12,12 @@ function Footer() {
           font-size: 14px;
           margin-bottom: 100px;
           line-height: 20px;
+          min-width: 1000px;
         }
         .flexed {
           display: flex;
           justify-content: space-around;
-          width: 40%;
+          max-width: 40%;
           margin: 0 auto;
           white-space: nowrap;
         }
@@ -39,6 +40,11 @@ function Footer() {
         }
         .small-header {
           font-weight: bold;
+        }
+        .email {
+          margin-top: 50px;
+          font-size: 20px;
+          border-bottom: 1px solid gray;
         }
       `}</style>
 
@@ -72,8 +78,7 @@ function Footer() {
         </div>
         <div className="footer-right">
           <p>Exceptional quality. Ethical factories. Radical Transparency. Sign up to enjoy free U.S. shipping and returns on your first order.</p>
-          <p>Email Address</p>
-          <hr />
+          <p className="email">Email Address</p>
           <button className="big-button">CONTINUE</button>
         </div>
       </div>
