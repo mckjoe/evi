@@ -1,9 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 function Women() {
   return (
     <p>Women component</p>
-  )
+  );
 }
 
-export default Women
+export default Women;

@@ -1,5 +1,5 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from 'react';
+import PropTypes from 'prop-types';
 
 function Store(props) {
   return (
@@ -123,7 +123,7 @@ function Store(props) {
     </div>
 
 
-  )
+  );
 }
 Store.propTypes = {
   image: PropTypes.string.isRequired,
@@ -134,6 +134,6 @@ Store.propTypes = {
   hours: PropTypes.array,
   services: PropTypes.array
 
-}
+};
 
-export default Store
+export default Store;

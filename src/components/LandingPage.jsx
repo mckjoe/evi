@@ -1,5 +1,5 @@
-import React from 'react'
-import masthead from '../assets/images/masthead.png'
+import React from 'react';
+import masthead from '../assets/images/masthead.png';
 
 function LandingPage() {
   return(
@@ -35,7 +35,7 @@ function LandingPage() {
         <p className="button">SHOP NOW</p>
       </div>
     </div>
-  )
+  );
 }
 
-export default LandingPage
+export default LandingPage;

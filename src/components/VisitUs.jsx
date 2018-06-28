@@ -1,7 +1,7 @@
-import React from 'react'
-import Store from './Store'
-import closet from '../assets/images/closet.jpg'
-import closet2 from '../assets/images/closet2.jpg'
+import React from 'react';
+import Store from './Store';
+import closet from '../assets/images/closet.jpg';
+import closet2 from '../assets/images/closet2.jpg';
 const STORE_LIST = [
   {
     image: closet,
@@ -59,7 +59,7 @@ const STORE_LIST = [
       }
     ]
   }
-]
+];
 
 function VisitUs() {
   return (
@@ -75,7 +75,7 @@ function VisitUs() {
           key={index}/>
       )}
     </div>
-  )
+  );
 }
 
-export default VisitUs
+export default VisitUs;

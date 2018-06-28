@@ -1,13 +1,13 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
-import Error404 from './Error404'
-import Navbar from './Navbar'
-import LandingPage from './LandingPage'
-import Men from './Men'
-import Women from './women'
-import About from './About'
-import VisitUs from './VisitUs'
-import Factories from './Factories'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+import Error404 from './Error404';
+import Navbar from './Navbar';
+import LandingPage from './LandingPage';
+import Men from './Men';
+import Women from './women';
+import About from './About';
+import VisitUs from './VisitUs';
+import Factories from './Factories';
 
 function App(){
 
@@ -33,7 +33,7 @@ function App(){
         <Route component={Error404} />
       </Switch>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;

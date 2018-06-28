@@ -1,7 +1,7 @@
-import React from 'react'
-import Everlane_logo from '../assets/images/Everlane_logo.png'
-import Suitcase from '../assets/images/suitcase-icon.png'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import Everlane_logo from '../assets/images/Everlane_logo.png';
+import Suitcase from '../assets/images/suitcase-icon.png';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   return (
@@ -100,6 +100,6 @@ function Navbar() {
         </ul>
       </div>
     </div>
-  )
+  );
 }
-export default Navbar
+export default Navbar;
