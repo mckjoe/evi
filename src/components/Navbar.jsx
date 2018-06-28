@@ -10,7 +10,7 @@ function Navbar() {
         .top-bar {
           background: #a3a5a7;
           margin: 0;
-          padding: 16px 0 13px 0;
+          padding: 15px 0 15px 0;
           text-align: center;
           color: white;
           width: 100%;
@@ -30,10 +30,11 @@ function Navbar() {
           font-size: .9rem;
           font-family: sans-serif;
           letter-spacing: 1px;
-          margin-top: 15px;
+          padding-bottom: 0px;
+          padding: 7px;
         }
         .navbar:hover {
-          box-shadow: 0 1px 5px #e2e2e2;
+          box-shadow: 20px 1px 5px #e2e2e2;
         }
 
         .everlane-logo {
