@@ -33,7 +33,7 @@ function App(){
         <Route component={Error404} />
       </Switch>
     </div>
-  );
+  )
 }
 
 export default App

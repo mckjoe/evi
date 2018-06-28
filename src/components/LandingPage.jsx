@@ -28,7 +28,7 @@ function LandingPage() {
         }
 
       `}</style>
-    <div className="masthead">
+      <div className="masthead">
         <h1 className="header">Summer tees are in.</h1>
         <p className="button">SHOP NOW</p>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react'
-import closet from '../assets/images/closet.jpg'
+import PropTypes from 'prop-types'
 
-function Store() {
+function Store(props) {
   return (
     <div>
       <style jsx>{`
@@ -91,31 +91,30 @@ function Store() {
         }
       `}</style>
       <div className='store'>
-        <img className="store-details-image" src={closet} />
+        <img className="store-details-image" src={props.image} />
         <div className="store-details">
-          <h1>Everlane Prince</h1>
-          <p className="store-details-paragraph-1">Our first store is here. Visit us in Nolita to shop our latest arrivals and most essential products. With our integrated I.D. system, you can return in store, shop walletless, and apply any existing credits to your purchase.</p>
-          <p style={{fontFamily: 'sans-serif', fontSize: '14px'}}>Stay tuned for community events, educational panels, and more.</p>
+          <h1>{props.name}</h1>
+          <p className="store-details-paragraph-1">{props.desc}</p>
+          <p style={{fontFamily: 'sans-serif', fontSize: '14px'}}>{props.descriptionAdditional}</p>
           <div className="flex">
             <ul>
               <li><strong>Location</strong></li>
-              <li>28 Prince St.</li>
-              <li>New York, NY 10012</li>
-              <li>See Map</li>
+              <li>{props.location[0].street}</li>
+              <li>{props.location[0].cityStateZip}</li>
+              <li>{props.location[0].mapLink}</li>
             </ul>
             <ul>
               <li><strong>Hours</strong></li>
-              <li>Monday-Friday: 11am-8pm</li>
-              <li>Monday–Friday: 11am–8pm</li>
-              <li>Saturday: 10am–7pm</li>
-              <li>Sunday: 11am–6pm</li>
+              <li>{props.hours[0].hours1}</li>
+              <li>{props.hours[0].hours2}</li>
+              <li>{props.hours[0].hours3}</li>
             </ul>
           </div>
-          <h2 className="small h2">1-Hour Styling Sessions</h2>
-          <p className="small">Book your appointment to shop with an Everlane Ambassador and we’ll help you find your new favorite looks.</p>
+          <h2 className="small h2">{props.services[0].name}</h2>
+          <p className="small">{props.services[0].description}</p>
           <ul className="hours">
-            <li style={{textAlign: 'center'}}>Monday-Thursday</li>
-            <li style={{textAlign: 'center'}}>9am-1pm</li>
+            <li style={{textAlign: 'center'}}>{props.services[0].days}</li>
+            <li style={{textAlign: 'center'}}>{props.services[0].hours}</li>
           </ul>
           <button className="book-now-button">BOOK NOW</button>
         </div>
@@ -124,7 +123,17 @@ function Store() {
     </div>
 
 
-);
+  )
+}
+Store.propTypes = {
+  image: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+  descriptionAdditional: PropTypes.string,
+  location: PropTypes.array,
+  hours: PropTypes.array,
+  services: PropTypes.array
+
 }
 
 export default Store
